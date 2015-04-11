@@ -1,0 +1,40 @@
+{
+  "uuid": "091bbf5b-b5da-47d4-803f-3e74c75a4616",
+  "shortName": "Baymax",
+  "longName": "Big Hero 6 Baymax",
+  "companyName": "Will's Great Pebble Watchfaces",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "sdkVersion": "3",
+  "targetPlatforms": ["aplite","basalt"],
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": [
+      {
+        "name": "BAYMAX_LOGO",
+        "file": "baymax_4.png",
+        "type": "png"
+      },
+      {
+        "name": "AKASHI_12",
+        "file": "Akashi.ttf",
+        "type": "font"
+      },
+      {
+        "name": "AKASHI_14",
+        "file": "Akashi.ttf",
+        "type": "font"
+      },
+      {
+        "name": "AKASHI_24",
+        "file": "Akashi.ttf",
+        "type": "font"
+      }
+    ]
+  }
+}
