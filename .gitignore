@@ -1,3 +1,6 @@
 
 # Ignore build generated files
 build
+
+# Ignore resources for publishing
+publish
