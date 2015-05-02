@@ -97,8 +97,6 @@ static void init(void) {
 
   //Subscribe to minute tick
   tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
-  // Subscribe to bluetooth status updates
-  bluetooth_connection_service_subscribe(bt_handler);
 }
 
 static void deinit(void) {
