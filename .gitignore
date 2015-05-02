@@ -4,3 +4,6 @@ build
 
 # Ignore resources for publishing
 publish
+
+# Ignore temporary build files
+/.lock-*
