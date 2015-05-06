@@ -13,7 +13,7 @@ static GFont *s_akashi_24;
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   int hour = tick_time->tm_hour;
   int minute = tick_time->tm_min;
-  char time_buffer[8];
+  static char time_buffer[16];
   if(!clock_is_24h_style()){
     if(hour > 12){
       hour -= 12;
@@ -21,7 +21,7 @@ static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
   }
   // Update the TextLayer
   snprintf(time_buffer, sizeof(time_buffer), "%i:%02i", hour, minute);
-  // APP_LOG(APP_LOG_LEVEL_DEBUG, "%s", time_buffer);
+  APP_LOG(APP_LOG_LEVEL_DEBUG, "%s", time_buffer);
   text_layer_set_text(time_layer, time_buffer);
 }
 
@@ -50,7 +50,7 @@ static void window_load(Window *window) {
   #endif
 
   // Set up Time Layer
-  char firstTime[8];
+  static char firstTime[16];
   clock_copy_time_string(firstTime, sizeof(firstTime));
   time_layer = text_layer_create((GRect) { .origin = { 0, 10}, .size = { bounds.size.w, 40 } });
   text_layer_set_text(time_layer, firstTime);

@@ -4,7 +4,7 @@
   "longName": "Big Hero 6 - Baymax",
   "companyName": "Will's Great Pebble Watchfaces",
   "versionCode": 1,
-  "versionLabel": "1.0",
+  "versionLabel": "1.1",
   "sdkVersion": "3",
   "targetPlatforms": ["basalt"],
   "watchapp": {
