@@ -7,3 +7,6 @@ publish
 
 # Ignore temporary build files
 /.lock-*
+
+# Ignore installed node modules
+node_modules
